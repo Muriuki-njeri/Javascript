@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <title>js_four</title>
+	</head>
+	<body>
+		<h1>learning javascript</h1>
+		<button type="button"
+            onclick="document.getElementById('demo').innerHTML = Date()">
+               Click me to display Date and Time.</button>
+
+                <p id="demo"></p>
+
+               <!--changing html contents using javascript-->
+               <p id="change">Changing html made easier</p>
+
+               <button type="button"
+                onclick="document.getElementById('change').innerHTML = 'This is new content!'">
+                Change</button> <br>
+
+                <!--changing an image by clicking on it-->
+                <img id="img" onclick="changeImage()" src="assets/images/bubbles.gif" width="100%" height="200">
+
+                <p>click the image to change it!</p>
+
+                <script>
+                        function changeImage() {
+                        var image = document.getElementById('img');
+                            if (image.src.match("next")) {
+                              image.src = "assets/images/img.gif";
+                           } else {
+                              image.src = "assets/images/img.gif";
+                            }
+                 }
+                </script>
+
+                <!--/using window alert-->
+                <script>
+                    window.alert(10+10);  
+                </script>
+	</body>
+</html>
