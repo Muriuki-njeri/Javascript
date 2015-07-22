@@ -4,6 +4,25 @@
 		 <title>js_five</title>
 	</head>
 	<body>
-		
+		<h1>Javascript statements</h1>
+         <p id="add"></p>
+        <script>
+             r = 1;
+             y = 2;
+             z = r + y;
+            document.getElementById("add").innerHTML = z;
+        </script>
+        <p id="paragraph">I am the only paragraph with such an id</p>
+        <h6 id="head">Being a heading is fun!!!!!!!!!!</h6>
+
+        <button type="button" onclick="replace()">Click to change text</button>
+        <script>
+           function replace(){
+             document.getElementById("paragraph").innerHTML = "Mochama is my name";
+             document.getElementById("head").innerHTML = "Iam no longer a header";
+           }
+        </script>
+
+
 	</body>
 </html>
